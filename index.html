@@ -1,0 +1,891 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Premier Academic & Content Writing Services. Thesis, Dissertations, Essays, Assignments, SEO Blog Posts, and Editing by PhD Experts. 100% Original, AI-Free, and Turnitin Guaranteed.">
+  <title>ThesisExperts360 | Premier Academic Writing & Blog Services</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ==========================================
+     PART: Header & Navigation with Dropdowns
+     ========================================== -->
+<header class="site-header">
+  <div class="container">
+    <nav class="navbar">
+      <!-- Brand Logo -->
+      <a href="#hero" class="brand-logo">
+        <div class="logo-icon"><i class="fas fa-graduation-cap"></i></div>
+        <div>ThesisExperts<span class="highlight">360</span></div>
+      </a>
+
+      <!-- Center Nav: Home & Services Dropdown -->
+      <ul class="nav-menu">
+        <li><a href="#hero" class="nav-link active">HOME</a></li>
+
+        <!-- SERVICES Mega Dropdown (All services consolidated here) -->
+        <li class="nav-item-dropdown" id="servicesDropdown">
+          <a href="#services" class="nav-link dropdown-toggle" role="button" aria-expanded="false">
+            SERVICES <i class="fas fa-chevron-down dropdown-arrow"></i>
+          </a>
+          <div class="mega-dropdown-menu">
+            <div class="mega-dropdown-grid">
+              <!-- Column 1: Academic Writing -->
+              <div class="mega-col">
+                <div class="mega-col-header">ACADEMIC WRITING</div>
+                <a href="#order" class="mega-item" data-select-service="essay">
+                  <span class="mega-item-icon" style="background: #ffede8; color: #e11d48;"><i class="fas fa-feather-alt"></i></span>
+                  <div>
+                    <strong>Custom Essay Writing</strong>
+                    <span>Argumentative, critical & analytical essays</span>
+                  </div>
+                </a>
+                <a href="#order" class="mega-item" data-select-service="dissertation">
+                  <span class="mega-item-icon" style="background: #eff6ff; color: #2563eb;"><i class="fas fa-graduation-cap"></i></span>
+                  <div>
+                    <strong>Thesis & Dissertation</strong>
+                    <span>Full chapters, proposals & defense prep</span>
+                  </div>
+                </a>
+                <a href="#order" class="mega-item" data-select-service="research-paper">
+                  <span class="mega-item-icon" style="background: #fefce8; color: #ca8a04;"><i class="fas fa-microscope"></i></span>
+                  <div>
+                    <strong>Research Papers</strong>
+                    <span>Empirical studies & data analysis</span>
+                  </div>
+                </a>
+                <a href="#order" class="mega-item" data-select-service="literature-review">
+                  <span class="mega-item-icon" style="background: #fff1f2; color: #e11d48;"><i class="fas fa-book-open"></i></span>
+                  <div>
+                    <strong>Literature Review</strong>
+                    <span>Peer-reviewed source synthesis</span>
+                  </div>
+                </a>
+                <a href="#order" class="mega-item" data-select-service="case-study">
+                  <span class="mega-item-icon" style="background: #ecfeff; color: #0891b2;"><i class="fas fa-briefcase"></i></span>
+                  <div>
+                    <strong>Case Study Analysis</strong>
+                    <span>Business, nursing & legal cases</span>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Column 2: Editing & Digital Content -->
+              <div class="mega-col">
+                <div class="mega-col-header">EDITING & CONTENT</div>
+                <a href="#order" class="mega-item" data-select-service="assignment">
+                  <span class="mega-item-icon" style="background: #eef2ff; color: #4f46e5;"><i class="fas fa-laptop-code"></i></span>
+                  <div>
+                    <strong>Assignments & Coursework</strong>
+                    <span>Lab reports, term papers & technical</span>
+                  </div>
+                </a>
+                <a href="#order" class="mega-item" data-select-service="editing-proofreading">
+                  <span class="mega-item-icon" style="background: #f0fdfa; color: #0d9488;"><i class="fas fa-highlighter"></i></span>
+                  <div>
+                    <strong>Editing & Proofreading</strong>
+                    <span>Grammar polish & style formatting</span>
+                  </div>
+                </a>
+                <a href="#order" class="mega-item" data-select-service="plagiarism-check">
+                  <span class="mega-item-icon" style="background: #ecfdf5; color: #059669;"><i class="fas fa-shield-alt"></i></span>
+                  <div>
+                    <strong>Plagiarism & AI Check</strong>
+                    <span>Official Turnitin similarity report</span>
+                  </div>
+                </a>
+                <a href="#order" class="mega-item" data-select-service="blog-post">
+                  <span class="mega-item-icon" style="background: #f5f3ff; color: #7c3aed;"><i class="fas fa-newspaper"></i></span>
+                  <div>
+                    <strong>SEO Blog Posts</strong>
+                    <span>Rank-ready articles & web copy</span>
+                  </div>
+                </a>
+                <a href="#order" class="mega-item" data-select-service="presentation">
+                  <span class="mega-item-icon" style="background: #fff7ed; color: #ea580c;"><i class="fas fa-chalkboard-teacher"></i></span>
+                  <div>
+                    <strong>Presentation Slides</strong>
+                    <span>Defense decks & speaker notes</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <!-- Right Action Dropdowns: Contact Dropdown & Order Now Dropdown -->
+      <div class="nav-actions">
+        <!-- 1. Contact Dropdown Button -->
+        <div class="action-dropdown-wrapper" id="contactDropdownWrapper">
+          <button type="button" class="btn btn-outline-contact dropdown-trigger" id="contactDropdownBtn" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-comment-dots"></i> <span>Contact</span> <i class="fas fa-chevron-down arrow-indicator"></i>
+          </button>
+          <div class="action-popover-menu" id="contactPopoverMenu">
+            <div class="popover-arrow"></div>
+            <div class="popover-title">Choose How to Reach Us</div>
+            <a href="https://wa.me/447915609384" target="_blank" class="popover-option whatsapp-opt">
+              <span class="popover-icon-box" style="background: #dcfce7; color: #16a34a;">
+                <i class="fab fa-whatsapp"></i>
+              </span>
+              <div class="popover-text">
+                <strong>Contact via WhatsApp</strong>
+                <span>+44 7915 609384 &bull; Instant Reply</span>
+              </div>
+              <i class="fas fa-arrow-right popover-chevron"></i>
+            </a>
+            <a href="mailto:support@thesisexperts360.com" class="popover-option email-opt">
+              <span class="popover-icon-box" style="background: #eff6ff; color: #2563eb;">
+                <i class="fas fa-envelope"></i>
+              </span>
+              <div class="popover-text">
+                <strong>Contact via Email</strong>
+                <span>support@thesisexperts360.com</span>
+              </div>
+              <i class="fas fa-arrow-right popover-chevron"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- 2. Order Now Dropdown Button (Red Style) -->
+        <div class="action-dropdown-wrapper" id="orderDropdownWrapper">
+          <button type="button" class="btn btn-red dropdown-trigger" id="orderDropdownBtn" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-file-signature"></i> <span>Order Now</span> <i class="fas fa-chevron-down arrow-indicator"></i>
+          </button>
+          <div class="action-popover-menu" id="orderPopoverMenu">
+            <div class="popover-arrow"></div>
+            <div class="popover-title">Select Order Method</div>
+            <a href="https://wa.me/447915609384?text=Hello%20ThesisExperts360%2C%20I%20would%20like%20to%20place%20a%20new%20academic%20assignment%20order." target="_blank" class="popover-option whatsapp-opt">
+              <span class="popover-icon-box" style="background: #dcfce7; color: #16a34a;">
+                <i class="fab fa-whatsapp"></i>
+              </span>
+              <div class="popover-text">
+                <strong>Order via WhatsApp</strong>
+                <span>Instant dispatch & supervisor review</span>
+              </div>
+              <i class="fas fa-arrow-right popover-chevron"></i>
+            </a>
+            <a href="#order" class="popover-option website-opt" id="orderViaWebsiteLink">
+              <span class="popover-icon-box" style="background: #ffede8; color: #e11d48;">
+                <i class="fas fa-edit"></i>
+              </span>
+              <div class="popover-text">
+                <strong>Order via Website Form</strong>
+                <span>Fill paper specs & formatting details</span>
+              </div>
+              <i class="fas fa-arrow-right popover-chevron"></i>
+            </a>
+          </div>
+        </div>
+
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+
+<!-- ==========================================
+     PART: Hero Section & Assignment Inquiry
+     ========================================== -->
+<section class="hero-section" id="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="section-badge">Academic writing service</div>
+        <h1 class="hero-title">Clear, original work from <span>subject specialists</span></h1>
+        <p class="hero-description">
+          Essays, theses, research papers, and editing matched to your brief, citation style, and deadline. Human-written, checked for originality, and delivered on time.
+        </p>
+
+        <div class="hero-features-list">
+          <div class="hero-feature-item">
+            <i class="fas fa-check-circle"></i> Original writing with a Turnitin report
+          </div>
+          <div class="hero-feature-item">
+            <i class="fas fa-check-circle"></i> APA, Harvard, MLA, Chicago, and more
+          </div>
+          <div class="hero-feature-item">
+            <i class="fas fa-check-circle"></i> Deadlines from 14 days down to 12 hours
+          </div>
+          <div class="hero-feature-item">
+            <i class="fas fa-check-circle"></i> Revisions and support until you are set
+          </div>
+        </div>
+
+        <div class="hero-cta-group">
+          <a href="#order" class="btn btn-red btn-lg">
+            <i class="fas fa-file-signature"></i> Start an order
+          </a>
+          <a href="#services" class="btn btn-outline btn-lg">
+            Browse services
+          </a>
+        </div>
+
+        <div class="hero-trust-bar">
+          <div class="trust-item">
+            <div class="trust-text">
+              85+
+              <span>Subject areas</span>
+            </div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-text">
+              24/7
+              <span>WhatsApp support</span>
+            </div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-text">
+              Private
+              <span>Your brief stays confidential</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-calculator">
+        <div class="calculator-card">
+          <div class="card-header">
+            <span class="card-badge">QUICK START</span>
+            <h3 class="card-title">Tell us what you need</h3>
+            <p class="card-lead">These details carry over to the full order form.</p>
+          </div>
+
+          <form id="hero-calculator-form">
+            <div class="form-group">
+              <label class="form-label" for="calc-service">Service</label>
+              <select id="calc-service" class="form-select">
+                <option value="essay">Custom Essay Writing</option>
+                <option value="dissertation">Thesis & Dissertation</option>
+                <option value="assignment">Assignments & Coursework</option>
+                <option value="research-paper">Research Papers</option>
+                <option value="blog-post">SEO Blog Posts</option>
+                <option value="editing-proofreading">Editing & Proofreading</option>
+                <option value="plagiarism-check">Plagiarism & AI Check</option>
+                <option value="literature-review">Literature Review</option>
+                <option value="case-study">Case Study Analysis</option>
+                <option value="presentation">Presentation Slides</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="calc-level">Academic level</label>
+              <select id="calc-level" class="form-select">
+                <option value="undergraduate" selected>Undergraduate / Bachelor's</option>
+                <option value="masters">Master's / Postgraduate</option>
+                <option value="phd">PhD / Doctoral</option>
+                <option value="college">College / Diploma</option>
+                <option value="high-school">High School</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="calc-deadline">Deadline</label>
+              <select id="calc-deadline" class="form-select">
+                <option value="14d">14 Days (Standard)</option>
+                <option value="7d" selected>7 Days (Popular)</option>
+                <option value="5d">5 Days</option>
+                <option value="3d">3 Days</option>
+                <option value="48h">48 Hours (Urgent)</option>
+                <option value="24h">24 Hours (Express)</option>
+                <option value="12h">12 Hours (Super Fast)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <div style="display: flex; justify-content: space-between; margin-bottom: 0.35rem;">
+                <label class="form-label" style="margin-bottom: 0;">Pages</label>
+                <span id="calc-words-display" style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600;">250 words</span>
+              </div>
+              <div class="counter-input-group">
+                <button type="button" class="counter-btn" id="calc-btn-minus" aria-label="Fewer pages"><i class="fas fa-minus"></i></button>
+                <div class="counter-display" id="calc-pages-display">1 Page</div>
+                <button type="button" class="counter-btn" id="calc-btn-plus" aria-label="More pages"><i class="fas fa-plus"></i></button>
+              </div>
+            </div>
+
+            <div class="inquiry-note">
+              <strong><i class="fas fa-check"></i> Included with every paper</strong>
+              Turnitin report, references, and revisions after delivery.
+            </div>
+
+            <div class="inquiry-actions">
+              <button type="button" id="calc-order-btn" class="btn btn-red btn-block">
+                Continue to order form
+              </button>
+              <a href="https://wa.me/447915609384" id="calc-whatsapp-btn" target="_blank" class="btn btn-outline btn-block">
+                <i class="fab fa-whatsapp"></i> Ask on WhatsApp
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="steps-band" aria-label="How ordering works">
+  <div class="container">
+    <div class="steps-row">
+      <div class="step-item">
+        <div class="step-num">1</div>
+        <div>
+          <h3>Choose a service</h3>
+          <p>Pick a card or set the details in the form above.</p>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">2</div>
+        <div>
+          <h3>Share your brief</h3>
+          <p>Add the topic, rubric, citation style, and deadline.</p>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">3</div>
+        <div>
+          <h3>Confirm on WhatsApp</h3>
+          <p>A supervisor reviews the brief and confirms the next step.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ==========================================
+     PART: Services Cards
+     ========================================== -->
+<section class="section-padding services-section" id="services">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-badge">Services</span>
+      <h2>What we can write or edit</h2>
+      <p class="section-subtitle">
+        Choose a card to open the order form with that service already selected.
+      </p>
+    </div>
+
+    <div class="services-ilove-grid">
+      <div class="ilove-card" data-select-service="essay">
+        <div class="ilove-icon-badge" style="background: #f3f4f6; color: #1e3a8a;">
+          <i class="fas fa-feather-alt"></i>
+        </div>
+        <h3 class="ilove-card-title">Custom Essay Writing</h3>
+        <p class="ilove-card-desc">
+          Argumentative, analytical, and critical essays written to your rubric.
+        </p>
+        <span class="ilove-card-action">Order this <i class="fas fa-arrow-right"></i></span>
+      </div>
+
+      <div class="ilove-card" data-select-service="dissertation">
+        <div class="ilove-icon-badge" style="background: #f3f4f6; color: #1e3a8a;">
+          <i class="fas fa-graduation-cap"></i>
+        </div>
+        <h3 class="ilove-card-title">Thesis & Dissertation</h3>
+        <p class="ilove-card-desc">
+          Chapters, proposals, literature synthesis, and defense preparation.
+        </p>
+        <span class="ilove-card-action">Order this <i class="fas fa-arrow-right"></i></span>
+      </div>
+
+      <div class="ilove-card" data-select-service="assignment">
+        <div class="ilove-icon-badge" style="background: #f3f4f6; color: #1e3a8a;">
+          <i class="fas fa-laptop-code"></i>
+        </div>
+        <h3 class="ilove-card-title">Assignments & Coursework</h3>
+        <p class="ilove-card-desc">
+          Lab reports, journals, problem sets, and term papers across subjects.
+        </p>
+        <span class="ilove-card-action">Order this <i class="fas fa-arrow-right"></i></span>
+      </div>
+
+      <div class="ilove-card" data-select-service="research-paper">
+        <div class="ilove-icon-badge" style="background: #f3f4f6; color: #1e3a8a;">
+          <i class="fas fa-microscope"></i>
+        </div>
+        <h3 class="ilove-card-title">Research Papers</h3>
+        <p class="ilove-card-desc">
+          Method, analysis, and a paper structured for academic submission.
+        </p>
+        <span class="ilove-card-action">Order this <i class="fas fa-arrow-right"></i></span>
+      </div>
+
+      <div class="ilove-card" data-select-service="blog-post">
+        <div class="ilove-icon-badge" style="background: #f3f4f6; color: #1e3a8a;">
+          <i class="fas fa-newspaper"></i>
+        </div>
+        <h3 class="ilove-card-title">SEO Blog Posts</h3>
+        <p class="ilove-card-desc">
+          Clear articles and web copy written around the keywords you provide.
+        </p>
+        <span class="ilove-card-action">Order this <i class="fas fa-arrow-right"></i></span>
+      </div>
+
+      <div class="ilove-card" data-select-service="editing-proofreading">
+        <div class="ilove-icon-badge" style="background: #f3f4f6; color: #1e3a8a;">
+          <i class="fas fa-highlighter"></i>
+        </div>
+        <h3 class="ilove-card-title">Editing & Proofreading</h3>
+        <p class="ilove-card-desc">
+          Grammar, structure, and formatting cleaned up without changing your argument.
+        </p>
+        <span class="ilove-card-action">Order this <i class="fas fa-arrow-right"></i></span>
+      </div>
+
+      <div class="ilove-card" data-select-service="plagiarism-check">
+        <div class="ilove-icon-badge" style="background: #f3f4f6; color: #1e3a8a;">
+          <i class="fas fa-shield-alt"></i>
+        </div>
+        <h3 class="ilove-card-title">Plagiarism & AI Check</h3>
+        <p class="ilove-card-desc">
+          A Turnitin similarity report and a check for AI-style writing.
+        </p>
+        <span class="ilove-card-action">Order this <i class="fas fa-arrow-right"></i></span>
+      </div>
+
+      <div class="ilove-card" data-select-service="literature-review">
+        <div class="ilove-icon-badge" style="background: #f3f4f6; color: #1e3a8a;">
+          <i class="fas fa-book-open"></i>
+        </div>
+        <h3 class="ilove-card-title">Literature Review</h3>
+        <p class="ilove-card-desc">
+          A synthesis of peer-reviewed studies and the theories they sit in.
+        </p>
+        <span class="ilove-card-action">Order this <i class="fas fa-arrow-right"></i></span>
+      </div>
+
+      <div class="ilove-card" data-select-service="case-study">
+        <div class="ilove-icon-badge" style="background: #f3f4f6; color: #1e3a8a;">
+          <i class="fas fa-briefcase"></i>
+        </div>
+        <h3 class="ilove-card-title">Case Study Analysis</h3>
+        <p class="ilove-card-desc">
+          Structured analysis and recommendations for business, nursing, or law cases.
+        </p>
+        <span class="ilove-card-action">Order this <i class="fas fa-arrow-right"></i></span>
+      </div>
+
+      <div class="ilove-card" data-select-service="presentation">
+        <div class="ilove-icon-badge" style="background: #f3f4f6; color: #1e3a8a;">
+          <i class="fas fa-chalkboard-teacher"></i>
+        </div>
+        <h3 class="ilove-card-title">Presentation Slides</h3>
+        <p class="ilove-card-desc">
+          Slide decks and speaker notes for class presentations or a defense.
+        </p>
+        <span class="ilove-card-action">Order this <i class="fas fa-arrow-right"></i></span>
+      </div>
+    </div>
+
+    <div class="services-note">
+      <p><strong>Citation styles we format to.</strong> Tell us the style in the order form and the paper follows it.</p>
+      <div class="citation-list">
+        <span>APA 7</span>
+        <span>Harvard</span>
+        <span>MLA</span>
+        <span>Chicago</span>
+        <span>OSCOLA</span>
+        <span>IEEE</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ==========================================
+     PART: Order Form
+     ========================================== -->
+<section class="section-padding order-section-wrapper" id="order">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-badge">Order</span>
+      <h2>Place your order</h2>
+      <p class="section-subtitle">
+        Fill in the brief. The summary on the left updates as you type, then you confirm the details on WhatsApp.
+      </p>
+    </div>
+
+    <div class="order-layout">
+      <aside class="order-side" aria-live="polite">
+        <div class="order-side-label">Your brief</div>
+        <div class="summary-list">
+          <div class="summary-row">
+            <span>Service</span>
+            <strong id="summary-service-text">Custom Essay Writing</strong>
+          </div>
+          <div class="summary-row">
+            <span>Level</span>
+            <strong id="summary-level-text">Undergraduate</strong>
+          </div>
+          <div class="summary-row">
+            <span>Deadline</span>
+            <strong id="summary-deadline-text">7 Days</strong>
+          </div>
+          <div class="summary-row">
+            <span>Length</span>
+            <strong id="summary-pages-text">1 Page (250 Words)</strong>
+          </div>
+          <div class="summary-row">
+            <span>Citation</span>
+            <strong id="summary-format-text">APA 7th Edition</strong>
+          </div>
+          <div class="summary-row">
+            <span>Topic</span>
+            <strong id="summary-topic-text">To be specified</strong>
+          </div>
+        </div>
+        <ul class="side-includes">
+          <li><i class="fas fa-check"></i> Turnitin report</li>
+          <li><i class="fas fa-check"></i> References included</li>
+          <li><i class="fas fa-check"></i> Revisions after delivery</li>
+        </ul>
+      </aside>
+
+      <div class="order-form-card">
+        <div class="form-card-header">
+          <h3>Paper details</h3>
+          <p>Required fields are marked. You can also attach files later on WhatsApp.</p>
+        </div>
+
+        <form id="main-order-form">
+          <div class="form-group">
+            <label class="form-label" for="order-topic">Topic or title *</label>
+            <input type="text" id="order-topic" class="form-control" placeholder="e.g. Supply chain disruption and how firms respond" required>
+          </div>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label class="form-label" for="order-service">Service *</label>
+              <select id="order-service" class="form-select" required>
+                <option value="essay">Custom Essay Writing</option>
+                <option value="dissertation">Thesis & Dissertation</option>
+                <option value="assignment">Assignments & Coursework</option>
+                <option value="research-paper">Research Papers</option>
+                <option value="blog-post">SEO Blog Posts</option>
+                <option value="editing-proofreading">Editing & Proofreading</option>
+                <option value="plagiarism-check">Plagiarism & AI Check</option>
+                <option value="literature-review">Literature Review</option>
+                <option value="case-study">Case Study Analysis</option>
+                <option value="presentation">Presentation Slides</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="order-subject">Subject *</label>
+              <select id="order-subject" class="form-select" required>
+                <option value="business">Business & Management</option>
+                <option value="nursing">Nursing & Healthcare</option>
+                <option value="law">Law & Criminology</option>
+                <option value="cs">Computer Science & IT</option>
+                <option value="finance">Economics & Finance</option>
+                <option value="engineering">Engineering</option>
+                <option value="psychology">Psychology & Social Sciences</option>
+                <option value="marketing">Marketing & Digital Media</option>
+                <option value="literature">Literature & Humanities</option>
+                <option value="other">Other / Multi-disciplinary</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-grid-3">
+            <div class="form-group">
+              <label class="form-label" for="order-level">Academic level *</label>
+              <select id="order-level" class="form-select" required>
+                <option value="undergraduate" selected>Undergraduate</option>
+                <option value="masters">Master's</option>
+                <option value="phd">PhD / Doctorate</option>
+                <option value="college">College / Diploma</option>
+                <option value="high-school">High School</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="order-deadline">Deadline *</label>
+              <select id="order-deadline" class="form-select" required>
+                <option value="14d">14 Days</option>
+                <option value="7d" selected>7 Days</option>
+                <option value="5d">5 Days</option>
+                <option value="3d">3 Days</option>
+                <option value="48h">48 Hours (Urgent)</option>
+                <option value="24h">24 Hours (Express)</option>
+                <option value="12h">12 Hours (Super Fast)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="order-pages">Pages *</label>
+              <select id="order-pages" class="form-select" required>
+                <option value="1">1 Page (250 Words)</option>
+                <option value="2">2 Pages (500 Words)</option>
+                <option value="3">3 Pages (750 Words)</option>
+                <option value="4">4 Pages (1,000 Words)</option>
+                <option value="5">5 Pages (1,250 Words)</option>
+                <option value="6">6 Pages (1,500 Words)</option>
+                <option value="8">8 Pages (2,000 Words)</option>
+                <option value="10">10 Pages (2,500 Words)</option>
+                <option value="12">12 Pages (3,000 Words)</option>
+                <option value="15">15 Pages (3,750 Words)</option>
+                <option value="20">20 Pages (5,000 Words)</option>
+                <option value="30">30 Pages (7,500 Words)</option>
+                <option value="40">40 Pages (10,000 Words)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label class="form-label" for="order-format">Citation style</label>
+              <select id="order-format" class="form-select">
+                <option value="apa7">APA 7th Edition</option>
+                <option value="harvard">Harvard Style</option>
+                <option value="mla9">MLA 9th Edition</option>
+                <option value="chicago">Chicago / Turabian</option>
+                <option value="oscola">OSCOLA (Law)</option>
+                <option value="ieee">IEEE</option>
+                <option value="vancouver">Vancouver</option>
+                <option value="other">Other / Follow Rubric</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="order-sources">Minimum sources</label>
+              <input type="number" id="order-sources" class="form-control" placeholder="e.g. 10" min="1" max="100">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="order-instructions">Instructions or rubric</label>
+            <textarea id="order-instructions" class="form-control" rows="4" placeholder="Paste the prompt, questions, or formatting notes."></textarea>
+          </div>
+
+          <div class="form-sub-header">
+            <h4>How we reach you</h4>
+            <p>Used to deliver the paper and the Turnitin report.</p>
+          </div>
+
+          <div class="form-grid-3">
+            <div class="form-group">
+              <label class="form-label" for="order-name">Full name *</label>
+              <input type="text" id="order-name" class="form-control" placeholder="Alex Morgan" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="order-email">Email *</label>
+              <input type="email" id="order-email" class="form-control" placeholder="alex@university.edu" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="order-phone">WhatsApp or phone *</label>
+              <input type="tel" id="order-phone" class="form-control" placeholder="+44 7000 000000" required>
+            </div>
+          </div>
+
+          <div class="form-submit-wrapper">
+            <button type="submit" class="btn btn-red btn-lg btn-block order-submit-btn">
+              Submit and confirm on WhatsApp
+            </button>
+            <div class="submit-guarantees-note">
+              <span><i class="fas fa-shield-alt"></i> Confidential</span>
+              <span><i class="fas fa-file-check"></i> Turnitin report included</span>
+              <span><i class="fas fa-headset"></i> Supervisor on WhatsApp</span>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ==========================================
+     PART: Contact & Consultation Section
+     ========================================== -->
+<section class="section-padding contact-section-wrapper" id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info-col">
+        <div class="contact-intro">
+          <span class="section-badge">Contact</span>
+          <h2>Talk to a supervisor</h2>
+          <p>Send a short brief or message us directly. We reply on WhatsApp and email, including evenings and weekends.</p>
+        </div>
+
+        <div class="contact-info-stack">
+          <a href="https://wa.me/447915609384" target="_blank" class="contact-card">
+            <div class="contact-icon" style="background: #ecfdf5; color: #15803d;">
+              <i class="fab fa-whatsapp"></i>
+            </div>
+            <div>
+              <h4>WhatsApp</h4>
+              <p>Fastest way to share a rubric or ask a question.</p>
+              <strong style="color: #15803d;">+44 7915 609384</strong>
+            </div>
+          </a>
+
+          <a href="mailto:support@thesisexperts360.com" class="contact-card">
+            <div class="contact-icon" style="background: #eff6ff; color: #1e3a8a;">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div>
+              <h4>Email</h4>
+              <p>Useful when you need to attach a longer brief.</p>
+              <strong style="color: #1e3a8a;">support@thesisexperts360.com</strong>
+            </div>
+          </a>
+
+          <div class="contact-card">
+            <div class="contact-icon" style="background: #f4f6f8; color: #334155;">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div>
+              <h4>Hours</h4>
+              <p>A supervisor is available around the clock.</p>
+              <strong>Replies within a few minutes</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-col">
+        <div class="contact-form-card">
+          <div class="form-card-header">
+            <h3>Send a short inquiry</h3>
+            <p>This opens WhatsApp with your message ready to send.</p>
+          </div>
+
+          <form id="contact-inquiry-form" onsubmit="event.preventDefault(); window.location.href='https://wa.me/447915609384?text=' + encodeURIComponent('Hi ThesisExperts360, I would like to inquire about academic writing support for: ' + document.getElementById('contact-subject').value + '. ' + document.getElementById('contact-msg').value);">
+            <div class="form-group">
+              <label class="form-label" for="contact-name">Full name *</label>
+              <input type="text" id="contact-name" class="form-control" placeholder="Your name" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-email">Email *</label>
+              <input type="email" id="contact-email" class="form-control" placeholder="you@university.edu" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-subject">Subject or topic</label>
+              <input type="text" id="contact-subject" class="form-control" placeholder="e.g. Master's dissertation in management">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-msg">What do you need? *</label>
+              <textarea id="contact-msg" class="form-control" rows="4" placeholder="Deadline, word count, citation style, and any questions." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-red btn-block">
+              <i class="fab fa-whatsapp"></i> Continue on WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ==========================================
+     PART: CTA Banner & Footer
+     ========================================== -->
+<section class="cta-wrap">
+  <div class="container">
+    <div class="cta-banner">
+      <div class="cta-banner-grid">
+        <div class="cta-banner-content">
+          <h2>Ready when your deadline is.</h2>
+          <p>Send the brief today. A supervisor reviews it and confirms scope before work starts.</p>
+        </div>
+        <div class="cta-buttons">
+          <a href="#order" class="btn btn-lg btn-light">
+            Place an order
+          </a>
+          <a href="https://wa.me/447915609384" target="_blank" class="btn btn-whatsapp btn-lg">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col footer-brand">
+        <a href="#hero" class="brand-logo" style="color: var(--white);">
+          <div class="logo-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div>ThesisExperts<span class="highlight">360</span></div>
+        </a>
+        <p>
+          Academic writing and editing for students, researchers, and publishers. Every paper is written to the brief you send.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="#services">Thesis & Dissertation</a></li>
+          <li><a href="#services">Custom Essay Writing</a></li>
+          <li><a href="#services">Assignment Help</a></li>
+          <li><a href="#services">Research Papers</a></li>
+          <li><a href="#services">Editing & Proofreading</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Support</h4>
+        <div class="footer-contact-item">
+          <i class="fab fa-whatsapp"></i>
+          <div>
+            <strong>WhatsApp</strong>
+            <p><a href="https://wa.me/447915609384" target="_blank">+44 7915 609384</a></p>
+          </div>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <strong>Email</strong>
+            <p><a href="mailto:support@thesisexperts360.com">support@thesisexperts360.com</a></p>
+          </div>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fas fa-clock"></i>
+          <div>
+            <strong>Hours</strong>
+            <p>Available 24 hours</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-disclaimer">
+      <strong>Disclaimer:</strong> ThesisExperts360 provides model research, drafting, proofreading, and tutoring for reference and study. Use materials in line with your institution's academic integrity rules.
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 ThesisExperts360. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/447915609384" target="_blank" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+  <span class="tooltip-text">Chat with an advisor</span>
+</a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

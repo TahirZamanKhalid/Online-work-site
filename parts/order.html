@@ -1,0 +1,203 @@
+<!-- ==========================================
+     PART: Order Form
+     ========================================== -->
+<section class="section-padding order-section-wrapper" id="order">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-badge">Order</span>
+      <h2>Place your order</h2>
+      <p class="section-subtitle">
+        Fill in the brief. The summary on the left updates as you type, then you confirm the details on WhatsApp.
+      </p>
+    </div>
+
+    <div class="order-layout">
+      <aside class="order-side" aria-live="polite">
+        <div class="order-side-label">Your brief</div>
+        <div class="summary-list">
+          <div class="summary-row">
+            <span>Service</span>
+            <strong id="summary-service-text">Custom Essay Writing</strong>
+          </div>
+          <div class="summary-row">
+            <span>Level</span>
+            <strong id="summary-level-text">Undergraduate</strong>
+          </div>
+          <div class="summary-row">
+            <span>Deadline</span>
+            <strong id="summary-deadline-text">7 Days</strong>
+          </div>
+          <div class="summary-row">
+            <span>Length</span>
+            <strong id="summary-pages-text">1 Page (250 Words)</strong>
+          </div>
+          <div class="summary-row">
+            <span>Citation</span>
+            <strong id="summary-format-text">APA 7th Edition</strong>
+          </div>
+          <div class="summary-row">
+            <span>Topic</span>
+            <strong id="summary-topic-text">To be specified</strong>
+          </div>
+        </div>
+        <ul class="side-includes">
+          <li><i class="fas fa-check"></i> Turnitin report</li>
+          <li><i class="fas fa-check"></i> References included</li>
+          <li><i class="fas fa-check"></i> Revisions after delivery</li>
+        </ul>
+      </aside>
+
+      <div class="order-form-card">
+        <div class="form-card-header">
+          <h3>Paper details</h3>
+          <p>Required fields are marked. You can also attach files later on WhatsApp.</p>
+        </div>
+
+        <form id="main-order-form">
+          <div class="form-group">
+            <label class="form-label" for="order-topic">Topic or title *</label>
+            <input type="text" id="order-topic" class="form-control" placeholder="e.g. Supply chain disruption and how firms respond" required>
+          </div>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label class="form-label" for="order-service">Service *</label>
+              <select id="order-service" class="form-select" required>
+                <option value="essay">Custom Essay Writing</option>
+                <option value="dissertation">Thesis & Dissertation</option>
+                <option value="assignment">Assignments & Coursework</option>
+                <option value="research-paper">Research Papers</option>
+                <option value="blog-post">SEO Blog Posts</option>
+                <option value="editing-proofreading">Editing & Proofreading</option>
+                <option value="plagiarism-check">Plagiarism & AI Check</option>
+                <option value="literature-review">Literature Review</option>
+                <option value="case-study">Case Study Analysis</option>
+                <option value="presentation">Presentation Slides</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="order-subject">Subject *</label>
+              <select id="order-subject" class="form-select" required>
+                <option value="business">Business & Management</option>
+                <option value="nursing">Nursing & Healthcare</option>
+                <option value="law">Law & Criminology</option>
+                <option value="cs">Computer Science & IT</option>
+                <option value="finance">Economics & Finance</option>
+                <option value="engineering">Engineering</option>
+                <option value="psychology">Psychology & Social Sciences</option>
+                <option value="marketing">Marketing & Digital Media</option>
+                <option value="literature">Literature & Humanities</option>
+                <option value="other">Other / Multi-disciplinary</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-grid-3">
+            <div class="form-group">
+              <label class="form-label" for="order-level">Academic level *</label>
+              <select id="order-level" class="form-select" required>
+                <option value="undergraduate" selected>Undergraduate</option>
+                <option value="masters">Master's</option>
+                <option value="phd">PhD / Doctorate</option>
+                <option value="college">College / Diploma</option>
+                <option value="high-school">High School</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="order-deadline">Deadline *</label>
+              <select id="order-deadline" class="form-select" required>
+                <option value="14d">14 Days</option>
+                <option value="7d" selected>7 Days</option>
+                <option value="5d">5 Days</option>
+                <option value="3d">3 Days</option>
+                <option value="48h">48 Hours (Urgent)</option>
+                <option value="24h">24 Hours (Express)</option>
+                <option value="12h">12 Hours (Super Fast)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="order-pages">Pages *</label>
+              <select id="order-pages" class="form-select" required>
+                <option value="1">1 Page (250 Words)</option>
+                <option value="2">2 Pages (500 Words)</option>
+                <option value="3">3 Pages (750 Words)</option>
+                <option value="4">4 Pages (1,000 Words)</option>
+                <option value="5">5 Pages (1,250 Words)</option>
+                <option value="6">6 Pages (1,500 Words)</option>
+                <option value="8">8 Pages (2,000 Words)</option>
+                <option value="10">10 Pages (2,500 Words)</option>
+                <option value="12">12 Pages (3,000 Words)</option>
+                <option value="15">15 Pages (3,750 Words)</option>
+                <option value="20">20 Pages (5,000 Words)</option>
+                <option value="30">30 Pages (7,500 Words)</option>
+                <option value="40">40 Pages (10,000 Words)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label class="form-label" for="order-format">Citation style</label>
+              <select id="order-format" class="form-select">
+                <option value="apa7">APA 7th Edition</option>
+                <option value="harvard">Harvard Style</option>
+                <option value="mla9">MLA 9th Edition</option>
+                <option value="chicago">Chicago / Turabian</option>
+                <option value="oscola">OSCOLA (Law)</option>
+                <option value="ieee">IEEE</option>
+                <option value="vancouver">Vancouver</option>
+                <option value="other">Other / Follow Rubric</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="order-sources">Minimum sources</label>
+              <input type="number" id="order-sources" class="form-control" placeholder="e.g. 10" min="1" max="100">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="order-instructions">Instructions or rubric</label>
+            <textarea id="order-instructions" class="form-control" rows="4" placeholder="Paste the prompt, questions, or formatting notes."></textarea>
+          </div>
+
+          <div class="form-sub-header">
+            <h4>How we reach you</h4>
+            <p>Used to deliver the paper and the Turnitin report.</p>
+          </div>
+
+          <div class="form-grid-3">
+            <div class="form-group">
+              <label class="form-label" for="order-name">Full name *</label>
+              <input type="text" id="order-name" class="form-control" placeholder="Alex Morgan" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="order-email">Email *</label>
+              <input type="email" id="order-email" class="form-control" placeholder="alex@university.edu" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="order-phone">WhatsApp or phone *</label>
+              <input type="tel" id="order-phone" class="form-control" placeholder="+44 7000 000000" required>
+            </div>
+          </div>
+
+          <div class="form-submit-wrapper">
+            <button type="submit" class="btn btn-red btn-lg btn-block order-submit-btn">
+              Submit and confirm on WhatsApp
+            </button>
+            <div class="submit-guarantees-note">
+              <span><i class="fas fa-shield-alt"></i> Confidential</span>
+              <span><i class="fas fa-file-check"></i> Turnitin report included</span>
+              <span><i class="fas fa-headset"></i> Supervisor on WhatsApp</span>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,178 @@
+<!-- ==========================================
+     PART: Header & Navigation with Dropdowns
+     ========================================== -->
+<header class="site-header">
+  <div class="container">
+    <nav class="navbar">
+      <!-- Brand Logo -->
+      <a href="#hero" class="brand-logo">
+        <div class="logo-icon"><i class="fas fa-graduation-cap"></i></div>
+        <div>ThesisExperts<span class="highlight">360</span></div>
+      </a>
+
+      <!-- Center Nav: Home & Services Dropdown -->
+      <ul class="nav-menu">
+        <li><a href="#hero" class="nav-link active">HOME</a></li>
+
+        <!-- SERVICES Mega Dropdown (All services consolidated here) -->
+        <li class="nav-item-dropdown" id="servicesDropdown">
+          <a href="#services" class="nav-link dropdown-toggle" role="button" aria-expanded="false">
+            SERVICES <i class="fas fa-chevron-down dropdown-arrow"></i>
+          </a>
+          <div class="mega-dropdown-menu">
+            <div class="mega-dropdown-grid">
+              <!-- Column 1: Academic Writing -->
+              <div class="mega-col">
+                <div class="mega-col-header">ACADEMIC WRITING</div>
+                <a href="#order" class="mega-item" data-select-service="essay">
+                  <span class="mega-item-icon" style="background: #ffede8; color: #e11d48;"><i class="fas fa-feather-alt"></i></span>
+                  <div>
+                    <strong>Custom Essay Writing</strong>
+                    <span>Argumentative, critical & analytical essays</span>
+                  </div>
+                </a>
+                <a href="#order" class="mega-item" data-select-service="dissertation">
+                  <span class="mega-item-icon" style="background: #eff6ff; color: #2563eb;"><i class="fas fa-graduation-cap"></i></span>
+                  <div>
+                    <strong>Thesis & Dissertation</strong>
+                    <span>Full chapters, proposals & defense prep</span>
+                  </div>
+                </a>
+                <a href="#order" class="mega-item" data-select-service="research-paper">
+                  <span class="mega-item-icon" style="background: #fefce8; color: #ca8a04;"><i class="fas fa-microscope"></i></span>
+                  <div>
+                    <strong>Research Papers</strong>
+                    <span>Empirical studies & data analysis</span>
+                  </div>
+                </a>
+                <a href="#order" class="mega-item" data-select-service="literature-review">
+                  <span class="mega-item-icon" style="background: #fff1f2; color: #e11d48;"><i class="fas fa-book-open"></i></span>
+                  <div>
+                    <strong>Literature Review</strong>
+                    <span>Peer-reviewed source synthesis</span>
+                  </div>
+                </a>
+                <a href="#order" class="mega-item" data-select-service="case-study">
+                  <span class="mega-item-icon" style="background: #ecfeff; color: #0891b2;"><i class="fas fa-briefcase"></i></span>
+                  <div>
+                    <strong>Case Study Analysis</strong>
+                    <span>Business, nursing & legal cases</span>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Column 2: Editing & Digital Content -->
+              <div class="mega-col">
+                <div class="mega-col-header">EDITING & CONTENT</div>
+                <a href="#order" class="mega-item" data-select-service="assignment">
+                  <span class="mega-item-icon" style="background: #eef2ff; color: #4f46e5;"><i class="fas fa-laptop-code"></i></span>
+                  <div>
+                    <strong>Assignments & Coursework</strong>
+                    <span>Lab reports, term papers & technical</span>
+                  </div>
+                </a>
+                <a href="#order" class="mega-item" data-select-service="editing-proofreading">
+                  <span class="mega-item-icon" style="background: #f0fdfa; color: #0d9488;"><i class="fas fa-highlighter"></i></span>
+                  <div>
+                    <strong>Editing & Proofreading</strong>
+                    <span>Grammar polish & style formatting</span>
+                  </div>
+                </a>
+                <a href="#order" class="mega-item" data-select-service="plagiarism-check">
+                  <span class="mega-item-icon" style="background: #ecfdf5; color: #059669;"><i class="fas fa-shield-alt"></i></span>
+                  <div>
+                    <strong>Plagiarism & AI Check</strong>
+                    <span>Official Turnitin similarity report</span>
+                  </div>
+                </a>
+                <a href="#order" class="mega-item" data-select-service="blog-post">
+                  <span class="mega-item-icon" style="background: #f5f3ff; color: #7c3aed;"><i class="fas fa-newspaper"></i></span>
+                  <div>
+                    <strong>SEO Blog Posts</strong>
+                    <span>Rank-ready articles & web copy</span>
+                  </div>
+                </a>
+                <a href="#order" class="mega-item" data-select-service="presentation">
+                  <span class="mega-item-icon" style="background: #fff7ed; color: #ea580c;"><i class="fas fa-chalkboard-teacher"></i></span>
+                  <div>
+                    <strong>Presentation Slides</strong>
+                    <span>Defense decks & speaker notes</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <!-- Right Action Dropdowns: Contact Dropdown & Order Now Dropdown -->
+      <div class="nav-actions">
+        <!-- 1. Contact Dropdown Button -->
+        <div class="action-dropdown-wrapper" id="contactDropdownWrapper">
+          <button type="button" class="btn btn-outline-contact dropdown-trigger" id="contactDropdownBtn" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-comment-dots"></i> <span>Contact</span> <i class="fas fa-chevron-down arrow-indicator"></i>
+          </button>
+          <div class="action-popover-menu" id="contactPopoverMenu">
+            <div class="popover-arrow"></div>
+            <div class="popover-title">Choose How to Reach Us</div>
+            <a href="https://wa.me/447915609384" target="_blank" class="popover-option whatsapp-opt">
+              <span class="popover-icon-box" style="background: #dcfce7; color: #16a34a;">
+                <i class="fab fa-whatsapp"></i>
+              </span>
+              <div class="popover-text">
+                <strong>Contact via WhatsApp</strong>
+                <span>+44 7915 609384 &bull; Instant Reply</span>
+              </div>
+              <i class="fas fa-arrow-right popover-chevron"></i>
+            </a>
+            <a href="mailto:support@thesisexperts360.com" class="popover-option email-opt">
+              <span class="popover-icon-box" style="background: #eff6ff; color: #2563eb;">
+                <i class="fas fa-envelope"></i>
+              </span>
+              <div class="popover-text">
+                <strong>Contact via Email</strong>
+                <span>support@thesisexperts360.com</span>
+              </div>
+              <i class="fas fa-arrow-right popover-chevron"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- 2. Order Now Dropdown Button (Red Style) -->
+        <div class="action-dropdown-wrapper" id="orderDropdownWrapper">
+          <button type="button" class="btn btn-red dropdown-trigger" id="orderDropdownBtn" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-file-signature"></i> <span>Order Now</span> <i class="fas fa-chevron-down arrow-indicator"></i>
+          </button>
+          <div class="action-popover-menu" id="orderPopoverMenu">
+            <div class="popover-arrow"></div>
+            <div class="popover-title">Select Order Method</div>
+            <a href="https://wa.me/447915609384?text=Hello%20ThesisExperts360%2C%20I%20would%20like%20to%20place%20a%20new%20academic%20assignment%20order." target="_blank" class="popover-option whatsapp-opt">
+              <span class="popover-icon-box" style="background: #dcfce7; color: #16a34a;">
+                <i class="fab fa-whatsapp"></i>
+              </span>
+              <div class="popover-text">
+                <strong>Order via WhatsApp</strong>
+                <span>Instant dispatch & supervisor review</span>
+              </div>
+              <i class="fas fa-arrow-right popover-chevron"></i>
+            </a>
+            <a href="#order" class="popover-option website-opt" id="orderViaWebsiteLink">
+              <span class="popover-icon-box" style="background: #ffede8; color: #e11d48;">
+                <i class="fas fa-edit"></i>
+              </span>
+              <div class="popover-text">
+                <strong>Order via Website Form</strong>
+                <span>Fill paper specs & formatting details</span>
+              </div>
+              <i class="fas fa-arrow-right popover-chevron"></i>
+            </a>
+          </div>
+        </div>
+
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
